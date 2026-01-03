@@ -51,7 +51,24 @@ nav > h1 {
   font-size: 20px;
   color: #121212;
 }
+@media (max-width: 750px) {
 
+  .nav-menu {
+    flex-direction: column;   
+    position: absolute;
+    top: 90px;
+    background-color: red;
+    width: 100%;
+    padding: 20px 0;
+    display: none; 
+  }
+  .nav-menu>li{
+    text-align: center;
+  }
+  #toggle-btn:checked ~ nav .nav-menu{
+    display: block;
+  }
+}
 /* Hero */
 .hero {
   display: flex;
@@ -161,3 +178,4 @@ nav > h1 {
     object-fit: contain;
   }
 }
+
